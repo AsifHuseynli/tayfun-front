@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+*:focus {
+    outline: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.chat {
+    height: 100%;
+    display: flex;
+}
+
+.chat .sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: #f5f5f5;    
+    display: flex;
+    flex-direction: column;
+
+}
+.chat .sidebar .contacts{
+    overflow: auto;
+}
+
+.chat .sidebar .search {
+    height: 50px;
+    min-height: 50px; 
+    border-bottom: #ddd solid 1px;
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat .sidebar .search input {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 0 35px 0 15px;
+}
+
+.chat .sidebar .search i {
+    position: absolute;
+    width: 35x;
+    height: 50px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-right: 20px;
+    
+}
+
+.chat .content {
+    flex: 1;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chat .sidebar .contacts img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat .sidebar .contacts a {
+    display: flex;
+    padding: 10px;
+
+}
+.chat .sidebar .contacts  ul li .name{
+    padding-left: 12px;
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: black;
+}
+.chat .sidebar .contacts  ul li .message{
+    padding-left: 10px;
+    font-size: 12px;
+    color: darkslategrey;
+}
+.chat .sidebar .contacts ul li a.active,
+.chat .sidebar .contacts ul li a:hover{
+    background: white;
+}
+.chat .sidebar .contacts  ul li a{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 0 10px;
+}
+.chat .sidebar .contacts  ul li a .notification{
+    width: 17px;
+    height: 17px;
+    background: red;
+    border-radius: 50%;
+    margin-left: auto;
+    align-items: center;
+    
+}
+.content .message-header .user-info  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;   
+    
+}
+.chat .content .message-header{
+    height: 50px;
+    min-height: 50px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 0 15px;
+}
+.content .message-header .user-info {
+    display: flex;
+    align-items: center; 
+   
+
+}
+
+.content .message-header .user .name{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.content .message-header .user .time{
+    font-size: 12px;
+}
+.chat .content .message-header .action ul{
+    display: flex;
+}
+.chat .content .message-header .action ul li a{
+    width: 30px;
+    text-align: center;
+    display: block;
+    color: #bbb;
+    
+}
+.chat .content .message-header .action ul li a i{
+    font-size: 19px;
+}
+.chat .content .message-header .action ul li a i:hover{
+    color:black ;
+}
+.chat .content .message-form {
+    
+    width: 100%;
+    background-color:#ddd;
+}
+.chat .content .message-form ul{
+    display: flex;
+    padding: 10px ;
+    
+}
+.chat .content .message-form ul li a {
+    width: 36px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+.chat .content .message-form ul li.input{
+   flex: 1;
+
+}
+.chat .content .message-form ul li.input input{
+    width: 100%;
+    height: 36px;
+    border-radius: 36px;
+    font-size: 14px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.chat .content .message-content{
+    flex: 1;
+}
+.chat .content .message-form ul li {
+    margin: 0 5px;
+}
+.chat .content .message-form ul .laugh a{
+   color: whitesmoke;
+   background-color: aqua;
+}
+.chat .content .message-form ul .micro a
+{
+ background-color: tomato;
+}
+.chat .content .message-form ul .image a
+{
+background-color: blue;
+
+}
